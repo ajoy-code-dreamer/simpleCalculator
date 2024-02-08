@@ -50,9 +50,10 @@ body {
   align-items: center;
 }
 .calculator_wrapper {
-  width: 350px;
+  width: 280px;
   padding: 25px;
-  box-shadow: 0 5px 7px rgba(0, 0, 0, 0.425);
+  box-shadow: 5px 5px 7px 6px rgba(0, 0, 0, 0.425),
+  -5px -5px 7px 6px rgba(0, 0, 0, 0.425);
   border-radius: 10px;
 }
 .display_wrapper {
@@ -62,12 +63,19 @@ body {
   justify-content: center;
   margin-bottom: 20px;
 }
+.display_wrapper h2{
+  text-align: center;
+  padding-bottom: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 700;
+  font-size: 20px;
+}
+
 .output_display,
 .input_display {
   width: 100%;
   height: 50px;
-  border: 1px solid rgba(0, 0, 0, 0.712);
-  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.5);
   padding: 5px;
   display: flex;
   justify-content: end;
@@ -78,6 +86,7 @@ body {
 }
 .output_display {
   border-radius: 5px 5px 0 0;
+  margin-bottom: 12px;
 }
 .input_display {
   border-radius: 0 0 5px 5px;
@@ -88,8 +97,7 @@ body {
   gap: 10px;
 }
 .keys_parent .key {
-  width: 50px;
-  height: 40px;
+  padding: 10px 0;
   font-family: "Courier New", Courier, monospace;
   font-weight: 700;
   font-size: 18px;
@@ -100,5 +108,4 @@ body {
 }
 .keys_parent .equal {
   grid-column: span 2;
-  width: 128px;
 }
